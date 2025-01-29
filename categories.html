@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Categories</title>
+</head>
+<style>
+  div .gallery{
+    /*margin: 0;*/
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+   
+  }
+  .gallery {
+    --s: 120px; /* control the size of the images*/
+    height: 500px;
+    background-color: #1de28a;
+    display: grid;
+    gap: 4px;
+    position: relative;
+  }
+  .gallery input {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    inset: calc(50% - var(--s)/3);
+    cursor: pointer;
+    --g: linear-gradient(#fff 0 0) no-repeat;
+    background: var(--g) 50%/60% 3px,var(--g) 50%/3px 60%,#222;
+    transition: 1.5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .gallery > img {
+    width: var(--s);
+    aspect-ratio: 1;
+    grid-area: 2/2;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(.5);
+    transition: 1s calc((var(--i) - 1)*.1s);
+    border: 2px solid red;
+  }
+  .gallery > img:nth-of-type(1) {--i:1;}
+  .gallery > img:nth-of-type(2) {--i:2;}
+  .gallery > img:nth-of-type(3) {--i:3;}
+  .gallery > img:nth-of-type(4) {--i:4;}
+  .gallery > img:nth-of-type(5) {--i:5;}
+  .gallery > img:nth-of-type(6) {--i:6;}
+  .gallery > img:nth-of-type(7) {--i:7;}
+  .gallery > img:nth-of-type(8) {--i:8;}
+  .gallery > img:nth-of-type(9) {--i:9;}
+  .gallery > img:nth-of-type(10) {--i:10;}
+  .gallery > img:nth-of-type(11) {--i:11;}
+  
+  .gallery > input:checked ~ img {
+    transform: 
+      rotate(calc(var(--i)* 360deg/10)) translate(calc(1.5*var(--s))) /* here by 2 we can adjust the angle */
+      rotate(calc(var(--i)*-360deg/10));
+  }
+  .gallery > input:checked {
+    transform: rotate(130deg)
+  }
+</style>
+<body>
+    <header>
+    
+        <ul>
+            <a href="#"><img src="images/logo.webp" alt="logo" width="50px" height="50px"></a>
+            <li><a href="index.html">WARDROBE FABRICS</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <div class="dropdown">
+              <li><a href="#" class="dropbtn">OUR BRANDS</a></li>
+              <div class="dropdown-content">
+                <a href="#">Zara</a>
+                <a href="#">Nike</a>
+                <a href="#">Levis</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <li><a href="categories.html" class="dropbtn">CATEGORIES</a></li>
+              <div class="dropdown-content">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+                <a href="kids.html">Kids</a>
+              </div>
+          </div>
+            <li><a href="login.html">LOGIN</a></li>
+            <!-- <li><a href="signin.html">REGISTER</a></li> -->
+            <li><a href="#"><i class="fa fa-cart-shopping"></i>&nbsp;CART</a></li>
+            <li><a href="#"><i class="fa fa-heart" style="color: red;"></i></a></li>
+        </ul>
+      </header>
+      <!-- image section -->
+      <div class="categoriesimg">
+        <img src="images/categoriesimg.avif" alt="img" width="70%" height="500px">
+
+      </div>
+      <hr>
+      <section class="bgcolor">
+        <center><h2><u>Categories</u></h2></center>
+        <div class="categories">
+          <div class="card"><img src="images/womenswear.jpeg" alt="img" width="300px" height="300px"></div>
+          <span><a href="women.html">Women Wear</a></span>
+        </div>
+        <div class="categories">
+          <div class="card"><img src="images/menwear.jpeg" alt="img" width="300px" height="300px"></div>
+          <span><a href="men.html">Men Wear</a></span>
+        </div>
+        <div class="categories">
+          <div class="card"><img src="images/kidswear.jpeg" alt="img" width="300px" height="300px"></div>
+          <span><a href="kids.html">Kids Wear</a></span>
+        </div>
+      </section>
+      <article>
+        <div class="slider">
+          <div class="slider-track">
+            <img src="images/vivi.jpeg" alt="Image 1" >
+            <img src="images/vivi2.jpeg" alt="Image 2" >
+            <img src="images/vivi3.jpeg" alt="Image 3">
+            <img src="images/vivi4.jpeg" alt="Image 4" >
+            <!-- <img src="offer.avif" alt="Image 5"> 
+            <img src="offer2.avif" alt="Image 6" > -->
+            <!-- Duplicate images for infinite scrolling -->
+          
+          </div>
+        </div>
+      </article>
+      <section class="bgcolor1">
+        <center><h2><u>SHOP BY PRICE</u></h2></center>
+        <div class="categories">
+          <div class="card"><img src="images/under100.avif" alt="img" width="300px" height="300px"></div>
+          <span><a href="#" class="under">Under Rs.100/-</a></span>
+        </div>
+        <div class="categories">
+          <div class="card"><img src="images/under500.avif" alt="img" width="300px" height="300px"></div>
+          <span><a href="#" class="under">Under Rs.500/-</a></span>
+        </div>
+        <div class="categories">
+          <div class="card"><img src="images/under1000.avif" alt="img" width="300px" height="300px"></div>
+          <span><a href="#" class="under">Under Rs.1000/-</a></span>
+        </div>
+      </section>
+      <!-- pic round -->
+      <div class="gallery">
+        <input type="checkbox" >
+        <img src="images/womenpage/twowedding.webp" alt="a forest after an apocalypse">
+        <img src="images/beautyproduct.jpeg" alt="a waterfall and many rocks">
+        <img src="images/jewel.jpeg" alt="a house on a mountain">
+        <img src="images/BabyWear.webp" alt="sime pink flowers">
+        <img src="images/menpage/twelvewedding.jpeg" alt="big rocks with some trees">
+        <img src="images/kidspage/fourjumpsuit.jpeg" alt="a waterfall, a lot of tree and a great view from the sky">
+        <img src="images/handbags.webp" alt="a cool landscape">
+        <img src="images/modernwear.webp" alt="inside a town between two big buildings">
+        <img src="images/ethnicwear.webp" alt="inside a town between two big buildings">
+        <img src="images/sleepwear.webp" alt="inside a town between two big buildings">
+      </div>
+      <!-- footer section -->
+    <footer>
+      <div class="logo">
+        <img src="images/logo.webp" alt="logo" width="100px" height="100px">
+        <h1>WARDROBE <br>FABRICS</h1>
+      </div>
+      <div class="box">
+        <div class="three">
+          <i class="fa fa-bag-shopping"></i>
+          <p>Easy Exchange</p>
+        </div>
+        <div class="three">
+          <i class="fa fa-hand-holding-heart"></i>
+          <p>100%  Handpicking</p>
+        </div>
+        <div class="three">
+          <i class="fa fa-check"></i>
+          <p>Quality Assurance</p>
+        </div>
+      </div><br>
+      <hr><br>
+      <div class="box2">
+        <h2>Help</h2>
+        
+          <p>Track your order</p>
+          <p>Returns</p>
+          <p>Cancellations</p>
+          <p>Payments</p>
+          <p>Customer Care</p>
+        
+      </div>
+      <div class="box2">
+        <h2>Shop By</h2>
+        
+          <p>Women</p>
+          <p>Men</p>
+          <p>Kids</p>
+          <p>New Collections</p>
+          <p>trendy Collections</p>
+        
+      </div>
+      <div class="box2">
+        <h2>Follow For More Collections</h2>
+
+        <p><i class="fa fa-phone fa-shake"></i> 9870654732</p>
+        <p><i class="fa-brands fa-facebook"></i> Wardrobe fabric_official</p>
+        <p><i class="fa-brands fa-whatsapp"></i> 9870654798</p>
+        <p><i class="fa-brands fa-x-twitter"></i>  Wardrobe fabric_official</p>
+        <p><i class="fa-brands fa-youtube"></i> Wardrobe fabric_official</p>
+        
+        
+      </div>
+      <div class="last">
+        <i>copyrights@2022</i>
+      </div>
+      
+    </footer>
+</body>
+</html>

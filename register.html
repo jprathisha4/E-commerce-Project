@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+<style>
+    body{
+        background-color: #7464bc;
+        background-image: url(images/signinimg.avif);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0%;
+    }
+    .container {
+        width: 30%;
+        /*border: 3px solid black;*/
+        padding: 2%;
+        font-size: 15px;
+        line-height: 60px;
+        position: relative;
+        left: 30%;
+        margin-top: 10%;
+        background-color: darkblue;
+        opacity: 0.8;
+        color: white;
+        box-shadow: 8px 8px 15px rgba(247, 243, 243, 0.5);
+        border-radius: 5%;
+    }
+    .container input{
+        width: 90%;
+        border: none;
+        border-radius: 4px;
+        opacity: 0.8;
+        background-color: #98c8ee;
+        padding: 3%;
+        font-size: 20px;
+        
+    }
+    form label{
+      font-size: 20px;
+    }
+    form button{
+        /* float: right; */
+        font-size: large;
+        background-color: lightblue;
+        opacity: 0.9;
+        padding: 3%;
+        width: 40%;
+        border: none;
+        border-radius: 5%;
+        margin: 3%;
+        cursor: pointer;
+       
+    }
+    
+    ::placeholder{
+        color: black;
+    }
+    button:hover{
+        background-color: #60adec;
+        opacity: 1;
+        
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    
+    
+
+    
+</style>
+
+<body>
+    <form action="/action_page.php">
+          
+        <div class="column container">  
+          <center><h1>Register</h1></center>
+          
+          <input type="text" placeholder="Enter Name" required><br>
+          
+          <input type="text" placeholder="Enter E-mail id" required><br>
+          
+          <input type="text" placeholder="Password" required><br>
+         
+          <input type="text" placeholder="Re-password" required><br>
+          
+          <button type="submit" class="submit"><a href="index.html">Register</a></button>
+          <button type="submit" class="submit"><a href="login.html">Log in</a></button>
+          
+        </div>
+    </form>
+</body>
+</html>

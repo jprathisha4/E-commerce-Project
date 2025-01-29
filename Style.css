@@ -1,0 +1,444 @@
+*{
+    box-sizing: border-box;
+    
+    margin: 0%;
+}
+.top{
+    color: white;
+    padding: 250px;
+    background-color: darkgray;
+    font-size: 20px;
+    
+}
+.top img{
+    /* float: right; */
+    position: absolute;
+    right: 10%; 
+    bottom: 40%;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    /* z-index: -1; */
+   
+}
+.top .sec{
+    position: absolute;
+    right: 20%; 
+    bottom: 40%;
+    opacity: 0.8;
+}
+header{
+    background-color: black;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    position: sticky;
+    top: 0;
+    /* overflow: hidden; */
+    z-index:1;
+}
+/* dropdown list for categories */
+.dropdown {
+    float: left; 
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 1.5%;
+    
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* end of dropdown list */
+
+/* logo alignment */
+header ul {
+    list-style-type: none; /* Remove bullet points */
+    
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+}
+
+header ul li {
+     margin: 0 15px; /* Space between items */
+}
+
+header ul li a {
+    color: white; /* Change link color to white */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Adjust font size */
+   
+}
+
+header ul li a:hover {
+    background-color: red;
+    
+}
+
+/* Optional: Style for the logo */
+header img {
+     vertical-align: middle; /* Align logo vertically */
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+  }
+
+  .slider {
+    width: 800px;
+    height: 400px;
+    overflow: hidden; /* Hides images that are not visible */
+    position: relative; /* Positions elements relative to this container */
+  }
+
+  .slider-track {
+    display: flex;
+    width: calc(100% * 1); /* Adjust width based on the number of images (original images * 2) */
+    animation: scroll 30s linear infinite; /* The animation that scrolls images */
+    position: absolute; /* Keeps the slider track in place */
+    left: 0; /* Start position */
+  }
+
+  .slider-track img {
+    width: 800px; /* Ensures all images take up the same space */
+    height: 400px;
+    object-fit: cover;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-300%); /* Scroll through all images */
+    }
+  }
+section{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: larger;
+}
+section .categories{
+    border: 3px solid lightskyblue;
+   
+   padding: 2px;
+   margin: 10px;
+   /* float: left; */
+   display: inline-block;
+   text-align: center;
+   margin-left: 150px;
+   margin-top: 50px;
+}
+.card{
+    width: 100%;
+    height: auto;
+}
+span a{
+    text-decoration: none;
+    font-size: xx-large;
+    color: chocolate;
+}
+/* categories under section words */
+span .under{
+    text-transform: none;
+   
+}
+.categories:hover{
+    border: 3px solid violet;
+    cursor: pointer;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    margin-top: 3%;
+    background-color: cadetblue;
+    /* font-size: xx-large; */
+    height: 550px;
+   
+   
+}
+.about h2{
+    font-size: xx-large;
+    color: azure;
+    padding: 3%;
+    text-decoration: underline;
+}
+.about img{
+    border-radius: 10%;
+    margin-left: 5%;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+}
+.about p{
+    float: right;
+    width: 50%;
+    text-align: justify;
+    padding-right: 10%;
+    font-size: 30px;
+    margin-top: 2%;
+}
+.contact h2{
+   
+    margin-top: 3%;
+    
+}
+
+
+
+form button{
+    float: right;
+    font-size: large;
+    background-color:thistle;
+    width: 30%;
+    
+}
+form button:hover{
+    background-color: pink;
+    border-radius: 20px;
+    border: 3px solid yellow;
+}
+.contact h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column {
+    float: left;
+    /* padding: 10px; 
+     height: 300px;  */
+  }
+  .container {
+    width: 35%;
+    border: 3px solid black;
+    padding: 4%;
+    font-size: 20px;
+    line-height: 40px;
+    position: relative;
+    left: 200px;
+    margin-top: 3%;
+    /* height: 400px; */
+    background-color: wheat;
+  }
+  .right {
+    width: 25%;
+    margin-left: 400px;
+    margin-top: 6%;
+
+  }
+ 
+   /* footer section */
+
+footer{
+     background-color: black;
+     color: aliceblue;
+} 
+.logo{
+    text-align: center;
+    
+}
+.logo img{
+    margin-top: 4%;
+   
+}
+.box{
+    display: flex;
+    font-size: 30px;
+    font-style: italic;
+    /* margin-left: 10%; */
+}
+.box .three{
+    margin-left: 15%;
+    margin-top: 4%;
+}
+.box i{
+    color: goldenrod;
+    margin-left: 40%;
+    line-height: 40px;
+}
+.help{
+    margin-left: 20%;
+    margin-top: 3%;
+    
+}
+.box2{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15%;
+}
+.box2 h2{
+    font-style: oblique;
+    text-decoration: underline;
+    
+}
+.box2 p{
+    line-height: 20px;
+    margin-top: 2%;
+}
+.last{
+    text-align: center;
+    margin-top: 4%;
+    font-size: xx-large;
+}
+
+/* categories page.... */
+.categoriesimg{
+    margin: 5%;
+    margin-left: 25%;
+    width: 70%
+    
+}
+.bgcolor{
+    background-color: #AAB396;
+    margin-top: -3%;
+    border: 2px solid black;
+    padding: 3%;
+    color: white;
+}
+.bgcolor span a{
+    color: white;
+    text-transform: capitalize;
+}
+.bgcolor1{
+    background-color: #654520;
+    margin-top: -3%;
+    border: 2px solid black;
+    padding: 3%;
+    color: white;
+}
+.bgcolor1 span a{
+    color: white;
+}
+.bgcolor1 img{
+    border-radius: 3%;
+}
+.bgcolor1 .categories{
+    border-radius: 3%;
+}
+/* mens.html */
+.mensection{
+    background-color: #B7B7B7;
+    border: 3px solid #705C53;
+}
+.mensection .categories span a{
+    color: #57463f;
+    /* font-size: 30px; */
+    /* color: white; */
+}
+.mensection .categories{
+    border: 3px solid #705C53;
+    border-radius: 3%;
+}
+/* kidspage */
+.kidspage  p a{
+    text-decoration: none;
+    
+}
+.kidspage .categories a{
+    color: teal;
+    text-transform: none;
+    font-size: 25px;
+}
+.kidspage .categories{
+    /* border-radius: 5%; */
+    border: 3px solid teal;
+}
+.kidspage .categories:hover{
+    border-radius: 5%;
+}
+.kidspage .card img{
+    border-radius: 5%;
+}
+
+
+/* product-details section */
+.productimg{
+    width: 30%;
+    height: 400px;
+    border: 3px solid grey;
+    margin: 5%;
+    margin-left: 20%;
+    position: relative;
+}
+.star{
+    cursor: pointer;
+}
+/* .star i:hover{
+    background-color: goldenrod;
+} */
+.productimg img{
+    margin: 10%;
+    margin-left: 18%;
+}
+div button{
+    /* margin: 5%; */
+    /* margin-left: 5%; */
+    font-size: large;
+    background-color:rgb(204, 31, 204);
+    width: 30%;
+    padding: 2%;
+    cursor: pointer;
+}
+div button:hover{
+    background-color: rgb(218, 143, 218);
+}
+.product button{
+    font-size: 15px;
+    padding: 1%;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.product button:hover{
+    background-color: #B7B7B7;
+}
+.details{
+    float: right;
+   margin-top: -550px;
+   margin-right: 200px;
+   font-size: 20px;
+   /* line-height: 100%; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

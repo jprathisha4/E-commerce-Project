@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    
+   #start {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       margin: 0;
+       padding: 0;
+       opacity: 1;
+       font-size: 75px;
+       background:-webkit-linear-gradient(#00aff9,#0086c3);
+       background: linear-gradient(#00aff9,#0086c3);
+       color: #342c2a; 
+      -webkit-animation: slide 1.5s ease-in-out forwards;
+             animation: slide 1.5s ease-in-out forwards;
+     
+   }
+   
+   #slide1, #slide2, #slide3, #slider4 {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       margin: 0;
+       padding: 0;
+       opacity: 0;
+       background:-webkit-linear-gradient(#00aff9,#0086c3);
+       background: linear-gradient(#00aff9,#0086c3);
+       color: #342c2a; 
+       font-size: 75px;
+   }
+   
+   .wrapper img {
+    text-align: center;
+    margin: 0;
+    height: 300px;
+    width: 500px;
+    }
+   
+   .wrapper {
+    
+    height: 400px;
+    
+    margin: 5%;
+    margin-left: 20%;
+    position: relative;
+    
+   }
+   
+   .container {
+       position: relative;
+       top: 0;
+       left: 0;
+       width: 500px;
+       height: 300px;
+       margin: 0;
+       padding: 0;
+       background: #282929;
+       box-shadow: 0px 0px 40px rgba(0,0,0,0.6);
+       border: 1px solid #fff;
+
+   }
+   
+   .navigation {
+       position: absolute;
+       bottom: 0px;
+       left: -150px;
+       margin: 0;
+   
+       padding: 0;
+   }
+   li{
+     color: transparent;
+   }
+   .btn {
+       float: left;
+       margin: 6px;
+       width: 120px;
+       height: 63px;
+       text-align: center;
+       border: 1px solid #fff;
+       box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+       -webkit-transition: 0.1s ease-in;
+               transition: 0.1s ease-in;
+   }
+   
+   .btn a img {
+       display: block; 
+       text-decoration: none;
+       height: 63px;
+       width: 120px;
+       letter-spacing: 2px;
+       font-size: 12px;
+   }
+   
+   .btn:hover {
+       -webkit-transition: 0.1s ease-in;
+               transition: 0.1s ease-in;
+       -webkit-transform: scale(1.2);
+               transform: scale(1.2);
+        background: #00aff9;
+   
+   }
+   
+   
+   #slide1:target, #slide2:target, #slide3:target, #slide4:target {
+     -webkit-animation: slide 1.5s ease-in-out forwards;
+             animation: slide 1.5s ease-in-out forwards;
+   }
+   
+   @-webkit-keyframes slide {
+       0% { font-size: 0px; opacity: 1;}  
+     100% { font-size: 75px; opacity: 1;}   
+   }
+   
+   @keyframes slide {
+       0% { font-size: 0px; opacity: 1;}   
+     100% { font-size: 75px; opacity: 1;}  
+   }
+     </style>
+  <body>
+    <header>
+    
+        <ul>
+            <a href="#"><img src="images/logo.webp" alt="logo" width="50px" height="50px"></a>
+            <li><a href="index.html">WARDROBE FABRICS</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <div class="dropdown">
+              <li><a href="#" class="dropbtn">OUR BRANDS</a></li>
+              <div class="dropdown-content">
+                <a href="#">Zara</a>
+                <a href="#">Nike</a>
+                <a href="#">Levis</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <li><a href="categories.html" class="dropbtn">CATEGORIES</a></li>
+              <div class="dropdown-content">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+                <a href="kids.html">Kids</a>
+              </div>
+          </div>
+            <li><a href="login.html">LOGIN</a></li>
+            <!-- <li><a href="signin.html">REGISTER</a></li> -->
+            <li><a href="#"><i class="fa fa-cart-shopping"></i>&nbsp;CART</a></li>
+            <li><a href="#"><i class="fa fa-heart" style="color: red;"></i></a></li>
+        </ul>
+      </header>
+      <!-- img -->
+       <!-- <div class="productimg">
+          <img src="images/kidspage/oneshoe.webp" alt="img" width="300px" height="300px"><br>
+          
+        </div> -->
+        <div class="wrapper">
+
+          <div class="container">
+            <div id="start"><img src="images/kidspage/oneshoe.webp" alt=""></div>
+            <div id="slide1"><img src="images/menimg.jpg" alt=""></div>
+            <div id="slide2"><img src="images/kidspage/oneshoe.webp" alt=""></div>
+            <div id="slide3"><img src="images/kidsfootwear.webp" alt=""></div>
+            <div id="slide4"><img src="images/shoes.jpeg" alt=""></div>
+          
+            <div class="navigation">
+        
+            <li> 
+            <div class="btn"> 
+            <a href="#slide1"><img src="images/menimg.jpg" alt=""></a>
+            </div>
+            </li>
+        
+            <li>
+            <div class="btn"> 
+            <a href="#slide2"><img src="images/kidspage/oneshoe.webp" alt=""></a>
+           </div>
+           </li> 
+        
+           <li>
+            <div class="btn">
+            <a href="#slide3"><img src="images/kidsfootwear.webp" alt=""></a>
+            </div>
+            </li>
+        
+            <li>
+            <div class="btn"> 
+            <a href="#slide4"><img src="images/shoes.jpeg" alt=""></a>
+            </div>
+            </li> 
+        
+         
+        
+            </div>
+          </div>  
+          
+        </div>
+
+        <div class="details">
+          <div class="product">
+              <h2>Modern Shoe</h2><br>
+              <p>MRP <s>Rs.670</s>&nbsp; <i class="fa-solid fa-indian-rupee-sign"></i>430</p>
+              <p><i>Free Delivery</i></p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p><br>
+              <h3>Select Size</h3>
+              <button>3-4 years</button>
+              <button>4-5 years</button>
+          </div><br>
+          <div>
+           <button><i class="fa fa-cart-shopping"></i>Add to Cart</button>
+           <button><i class="fa-solid fa-forward"></i>Buy Now</button>
+          </div><br>
+          <div class="product-details">
+            <h3>Product Details</h3><br>
+            <p>Name : Classy Kids Boys Kids Boys Casual Shoe</p>
+            <p>Material : Canvas</p>
+            <p>Sole Material : Pvc</p>
+            <p>Fastening & Back Detail : Lace-Up</p>
+            <p>Ideal For : Boys</p>
+            <p>Pattern : Printed</p>
+            <p>Net Quantity : 1</p>
+          </div>
+        </div>
+        <!-- footer section -->
+    <footer>
+      <div class="logo">
+        <img src="images/logo.webp" alt="logo" width="100px" height="100px">
+        <h1>WARDROBE <br>FABRICS</h1>
+      </div>
+      <div class="box">
+        <div class="three">
+          <i class="fa fa-bag-shopping"></i>
+          <p>Easy Exchange</p>
+        </div>
+        <div class="three">
+          <i class="fa fa-hand-holding-heart"></i>
+          <p>100%  Handpicking</p>
+        </div>
+        <div class="three">
+          <i class="fa fa-check"></i>
+          <p>Quality Assurance</p>
+        </div>
+      </div><br>
+      <hr><br>
+      <div class="box2">
+        <h2>Help</h2>
+        
+          <p>Track your order</p>
+          <p>Returns</p>
+          <p>Cancellations</p>
+          <p>Payments</p>
+          <p>Customer Care</p>
+        
+      </div>
+      <div class="box2">
+        <h2>Shop By</h2>
+        
+          <p>Women</p>
+          <p>Men</p>
+          <p>Kids</p>
+          <p>New Collections</p>
+          <p>trendy Collections</p>
+        
+      </div>
+      <div class="box2">
+        <h2>Follow For More Collections</h2>
+
+        <p><i class="fa fa-phone fa-shake"></i> 9870654732</p>
+        <p><i class="fa-brands fa-facebook"></i> Wardrobe fabric_official</p>
+        <p><i class="fa-brands fa-whatsapp"></i> 9870654798</p>
+        <p><i class="fa-brands fa-x-twitter"></i>  Wardrobe fabric_official</p>
+        <p><i class="fa-brands fa-youtube"></i> Wardrobe fabric_official</p>
+        
+        
+      </div>
+      <div class="last">
+        <i>copyrights@2022</i>
+      </div>
+      
+    </footer>
+  </body>
+</html>

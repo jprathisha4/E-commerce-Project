@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Form</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        background-color: #7464bc;
+        background-image: url(images/loginimg.avif);
+        background-repeat: no-repeat;
+        background-size: 100%;
+       
+        margin: 0%;
+    }
+    .container {
+        width: 30%;
+        /*border: 3px solid black;*/
+        padding: 2%;
+        font-size: 15px;
+        line-height: 50px;
+        position: relative;
+        left: 30%;
+        margin-top: 8%;
+        background-color: #7464bc;
+        opacity: 0.8;
+        color: white;
+        box-shadow: 8px 8px 15px  rgba(247, 243, 243, 0.5);
+        border-radius: 5%;
+    }
+    .container input{
+        width: 90%;
+        border: none;
+        border-radius: 4px;
+        opacity: 0.8;
+        background-color: #98c8ee;
+        padding: 3%;
+        font-size: 20px;
+        
+    }
+    form label{
+      font-size: 20px;
+    }
+    form button{
+        float: right;
+        font-size: large;
+        background-color: #4ca2e9;
+        padding: 3%;
+        width: 40%;
+        border: none;
+        border-radius: 5%;
+        
+        cursor: pointer;
+       margin-top: 2%;
+    }
+    button a{
+        color: black;
+    }
+    
+    ::placeholder{
+        color: black;
+    }
+    
+    button:hover{
+        background-color: #1073c4;
+        
+       
+    }
+
+     a{
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .container p{
+        font-size: 20px;
+        text-align: center;
+    }
+    p a:hover{
+        color: black;
+    }
+    
+    
+    
+
+
+    
+</style>
+
+<body>
+   
+
+    <form action="/action_page.php">
+          
+        <div class="column container">  
+          <center><h1>LOG IN</h1></center>
+          <label for=""><i class="fa-solid fa-user"></i> User Name:</label><br>
+          <input type="text"  placeholder="Enter Name" required><br>
+          <label for="psw"><i class="fa-solid fa-lock"></i> Password:</label><br>
+          <input type="text" placeholder="Password" required><br>
+          <a href="#">forgot Password?</a>
+          <button type="submit" class="submit"><a href="index.html">Log in</a></button>
+          <p>To create a new account?<a href="register.html"><u>Register</u></a></p>
+         
+          
+        </div>
+    </form>
+    
+</body>
+</html>
